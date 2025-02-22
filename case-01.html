@@ -2,9 +2,212 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Case-01</title>
+    <style>
+        body{
+            overflow: hidden;
+        }
+        body > div  {
+            position: absolute;
+            width: 50vw;
+            height: 50vh;
+        }
+
+        body > div:first-child {
+            background: darkred;
+            top: 0;
+            left: 0;
+        }
+
+        body > div:nth-child(2) {
+            background: darkblue;
+            top: 0;
+            right: 0;
+        }
+
+        body > div:nth-child(3) {
+            background: green;
+            bottom: 0;
+            left: 0;
+        }
+
+        body > div:nth-child(4) {
+            background: orangered;
+            bottom: 0;
+            right: 0;
+        }
+
+        body > div > div {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: white;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+
+        }
+
+        body > div > div > div {
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            background: darkgoldenrod;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        body > div:nth-child(5) {
+            background: white;
+            width: 150px;
+            height: 150px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+        }
+
+        body > div:nth-child(5) > div {
+            background: darkgoldenrod;
+            width: 50%;
+            height: 50%;
+            border-radius: 50%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+        }
+
+        body > div:nth-child(6) {
+            background: white;
+            width: 100px;
+            height: 100px;
+            border-radius: 0 0 100% 0;
+            top: 0;
+            left: 0;
+        }
+
+        body > div:nth-child(7) {
+            background: white;
+            width: 100px;
+            height: 100px;
+            border-radius: 0 0 0 100%;
+            top: 0;
+            right: 0;
+        }
+
+        body > div:nth-child(8) {
+            background: white;
+            width: 100px;
+            height: 100px;
+            border-radius: 0 100% 0 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        body > div:nth-child(9) {
+            background: white;
+            width: 100px;
+            height: 100px;
+            border-radius: 100% 0 0 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        body > .circle {
+            background: white;
+            width: 100px;
+            height: 100px;
+        }
+
+        body > div:nth-child(10) {
+            top: -50px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-radius: 0 0 100% 100%;
+        }
+        body > div:nth-child(11) {
+            bottom: -50px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-radius: 100% 100% 0 0;
+        }
+
+
+        /*body > #circle1{
+            left: 50%;
+            border-radius: 0 0 100% 0;
+            top: 0;
+        }
+
+        body > #circle2{
+            right: 50%;
+            border-radius: 0 0 0 100%;
+            top: 0;
+        }
+        body > #circle3{
+            left: 50%;
+            border-radius: 0 100% 0 0;
+            bottom: 0;
+        }
+        body > #circle4{
+            right: 50%;
+            border-radius: 100% 0 0 0;
+            bottom: 0;
+        }*/
+
+    </style>
 </head>
 <body>
+
+<div>
+    <div>
+        <div></div>
+    </div>
+</div>
+<div>
+    <div>
+        <div></div>
+    </div>
+</div>
+<div>
+    <div>
+        <div></div>
+    </div>
+</div>
+<div>
+    <div>
+        <div></div>
+    </div>
+</div>
+
+<div>
+    <div></div>
+</div>
+
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+<!--<div id="circle1" class="circle"></div>
+<div id="circle2" class="circle"></div>
+<div id="circle3" class="circle"></div>
+<div id="circle4" class="circle"></div>-->
+
+<div class="circle"></div>
+<div class="circle"></div>
+
 
 </body>
 </html>
