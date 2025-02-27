@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 03</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Arial , sans-serif;
+            font-size: 20px;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+        .outer-circle{
+            position: fixed;
+            background: gray;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            left: 50vw;
+            top: 50vh;
+            transform: translate(-50%, -50%);
+
+        }
+        .inner-circle{
+            position: fixed;
+            background: darkred;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            left: 50vw;
+            top: 50vh;
+            transform: translate(-50%, -50%);
+
+        }
+        .white-circle{
+            position: fixed;
+            background: white;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            left: 50vw;
+            top: 50vh;
+            transform: translate(-50%, -50%);
+
+        }
+        .scroll-circles{
+            position: relative;
+            width: 200px;
+            height: 600vh;
+
+
+        }
+        .purple-circle{
+            position: relative;
+            background-color: purple;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            left: 50vw;
+            top: 300vh;
+            transform: translate(-50%, -50%);
+
+        }
+         .text{
+            position: relative;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .blue-circle{
+            position: relative;
+            background-color: blue;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            left: 50vw;
+            top: 450vh;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+        .green-circle{
+            position: relative;
+            background-color: green;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            left: 50vw;
+            top: 509vh;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+<div class="outer-circle"></div>
+<div class="inner-circle"></div>
+<div class="white-circle"></div>
+
+<div class="scroll-circles">
+    <div class="purple-circle"><p class="text">Hello</p></div>
+    <div class="blue-circle"><p class="text">Welcome To</p></div>
+    <div class="green-circle"><p class="text">Institute of Software Engineering</p></div>
+</div>
+
+</body>
+</html>
