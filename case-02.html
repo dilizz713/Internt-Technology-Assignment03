@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 02</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header{
+            background-color: white;
+            border-bottom: 5px solid black;
+            color: black;
+        }
+        .logo{
+            width: 100px;
+            padding: 15px;
+            margin: 10px;
+        }
+        nav ul{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        nav ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 10px;
+        }
+        nav ul li a{
+            color: black;
+            font-weight: bold;
+        }
+        nav ul li a:link{
+            text-decoration: none;
+        }
+        .container{
+            position: absolute;
+            display: flex;
+        }
+        .container > aside{
+            position: relative;
+            width:50%;
+            background-color: blueviolet;
+        }
+        .container > aside > ul{
+            position: relative;
+            list-style: none;
+            top: 0;
+            right: 10px;
+        }
+        .container > aside > ul > li{
+            padding: 10px;
+        }
+        .container > aside > ul > li > a{
+           color: white;
+        }
+        .container > aside > ul > li > a:link{
+            text-decoration: none;
+        }
+
+        .container > main{
+            background-color: white;
+        }
+        .container > main > .image-container{
+            display: flex;
+            padding: 5px;
+            width: 100%;
+
+        }
+        .container > main > .image-container > .monkey{
+            display: flex;
+            width: 33%;
+            border: 1px solid black;
+            position: relative;
+        }
+        .container > main > .paragraph-container{
+            width: 100%;
+            margin: 10px;
+
+        }
+        footer{
+            position: absolute;
+            background-color: dimgray;
+            color: white;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div>
+        <img src="assets/logoijse.png" alt="logo" class="logo">
+    </div>
+    <nav>
+        <ul>
+            <li>
+                <a href=#>Home</a>
+            </li>
+            <li>
+                <a href=#>Services</a>
+            </li>
+            <li>
+                <a href=#>Contacts</a>
+            </li>
+            <li>
+                <a href=#>About Us</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <aside>
+        <ul>
+            <li>
+                <a href=#>Home</a>
+            </li><li>
+                <a href=#>Services</a>
+            </li><li>
+                <a href=#>Contacts</a>
+            </li><li>
+                <a href=#>About Us</a>
+            </li>
+        </ul>
+    </aside>
+
+    <main>
+        <div class="image-container">
+            <img src="assets/monkey.gif" alt="monkey" class="monkey">
+            <img src="assets/monkey.gif" alt="monkey" class="monkey">
+            <img src="assets/monkey.gif" alt="monkey" class="monkey">
+        </div>
+        <div class="paragraph-container">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br><br> sed do eiusmod tempor incididunt ut
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                Lorem ipsum dolor sit amet, consectetur<br><br> adipiscing elit, sed do eiusmod tempor incididunt ut
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                Lorem ipsum dolor sit amet,<br><br> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br><br> tempor incididunt ut
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                Lorem ipsum dolor sit amet, consectetur<br><br> adipiscing elit, sed do eiusmod tempor incididunt ut
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                Lorem ipsum dolor sit amet,<br><br> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utsed do eiusmod tempor incididunt ut
+
+            </p>
+        </div>
+
+    </main>
+    <footer>
+        <p>Developed by IJSE</p>
+    </footer>
+</div>
+
+
+
+</body>
+</html>
