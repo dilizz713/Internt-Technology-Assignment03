@@ -17,102 +17,72 @@
             width: 100vw;
             height: 100vh;
             overflow-x: hidden;
+            background-color: antiquewhite;
         }
-        .outer-circle{
+        .fixed-circle{
             position: fixed;
+            border-radius: 50%;
+            left: 50vw;
+            top: 50vh;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            mask: radial-gradient(circle 150px at center,transparent 50%,black 51%);
+        }
+        #outer-circle{
             background: gray;
             width: 200px;
             height: 200px;
-            border-radius: 50%;
-            left: 50vw;
-            top: 50vh;
-            transform: translate(-50%, -50%);
-            mask: radial-gradient(circle 150px at center,transparent 50%,black 51%);
-            z-index: 10;
+
         }
-        .inner-circle{
-            position: fixed;
+        #inner-circle{
             background: darkred;
             width: 180px;
             height: 180px;
-            border-radius: 50%;
-            left: 50vw;
-            top: 50vh;
-            transform: translate(-50%, -50%);
-            z-index: 10;
-            mask: radial-gradient(circle 150px at center,transparent 50%,black 51%);
-
-        }
-        .white-circle{
-            position: fixed;
-            background: white;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            left: 50vw;
-            top: 50vh;
-            transform: translate(-50%, -50%);
-            z-index: 10;
-            mask: radial-gradient(circle 150px at center,transparent 50%,black 51%);
-
         }
         .scroll-circles{
             position: relative;
             width: 200px;
             height: 600vh;
-
-
         }
-        .purple-circle{
+        .circle{
             position: relative;
-            background-color: purple;
             width: 150px;
             height: 150px;
             border-radius: 50%;
             left: 50vw;
-            top: 300vh;
             transform: translate(-50%, -50%);
-
+            z-index: 1;
         }
-         .text{
+        #purple-circle{
+            background-color: purple;
+            top: 300vh;
+        }
+
+        #blue-circle{
+            background-color: blue;
+            top: 404vh;
+        }
+        #green-circle{
+            background-color: green;
+            top: 509vh;
+        }
+        .text{
             position: relative;
             text-align: center;
             top: 50%;
             transform: translateY(-50%);
         }
-        .blue-circle{
-            position: relative;
-            background-color: blue;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            left: 50vw;
-            top: 450vh;
-            transform: translate(-50%, -50%);
-            z-index: 1;
-        }
-        .green-circle{
-            position: relative;
-            background-color: green;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            left: 50vw;
-            top: 509vh;
-            transform: translate(-50%, -50%);
-            z-index: 1;
-        }
     </style>
 </head>
 <body>
-<div class="outer-circle"></div>
-<div class="inner-circle"></div>
-<div class="white-circle"></div>
+<div id="outer-circle" class="fixed-circle"></div>
+<div id="inner-circle" class="fixed-circle"></div>
+
 
 <div class="scroll-circles">
-    <div class="purple-circle"><p class="text">Hello</p></div>
-    <div class="blue-circle"><p class="text">Welcome To</p></div>
-    <div class="green-circle"><p class="text">Institute of Software Engineering</p></div>
+    <div id="purple-circle" class="circle"><p class="text">Hello</p></div>
+    <div id="blue-circle" class="circle"><p class="text">Welcome To</p></div>
+    <div id="green-circle" class="circle"><p class="text">Institute of Software Engineering</p></div>
 </div>
 
 </body>
